@@ -1,13 +1,18 @@
 
-# Purpose
-
-- For teaching and learning basics of local inference using the LTX-2 video generation model.
-
 # Do not modify
 
 - Do not modify any files in the `examples` directory.
 - Do not modify `README.md` without asking.
 - Do not modify any data or logged requests.
+
+# Python environment
+
+- Use `uv` for all Python dependency management and environment tasks.
+- Do not use `pip`, `venv`, or `poetry`.
+- Always use `uv add <package>` to add dependencies.
+- Use `uv run <command>` to execute scripts.
+- Use `uv sync` to install dependencies from `pyproject.toml`.
+- When creating a new project, use `uv init`.
 
 # Style
 
@@ -18,4 +23,3 @@
 # Usage
 
 - Launch and run in a terminal on an Apple MacOS laptop.
-- Prefer uv to run python.
