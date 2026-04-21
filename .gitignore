@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+# External tools (clone separately, see setup.sh)
+ltx-2-mlx/
+
+data/**
