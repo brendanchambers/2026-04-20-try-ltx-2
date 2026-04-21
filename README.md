@@ -27,10 +27,23 @@ This will clone the `ltx-2-mlx` repository at the tested commit.
 
 ## Usage
 
-### Generate sample video
+### Generate sample video from text prompt
 
 ```bash
 uv run ltx-2-mlx generate --prompt "A cat walking in a garden" --output test.mp4 --model dgrauet/ltx-2.3-mlx-q4 --frames 9 --height 480 --width 704
+```
+
+### Animate an image (Image-to-Video)
+
+```bash
+cd ltx-2-mlx && uv run ltx-2-mlx generate \
+  --image ../data/incoming/019_Spence_10_Poems_1987_p0012.png \
+  --prompt "Experimental poetry text with letters slowly shifting and moving, subtle paper texture animation" \
+  --output ../data/generated_videos/output_poetry_animation.mp4 \
+  --model dgrauet/ltx-2.3-mlx-q4 \
+  --frames 30 \
+  --height 480 \
+  --width 704
 ```
 
 ## Resources
