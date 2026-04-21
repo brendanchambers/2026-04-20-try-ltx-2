@@ -33,6 +33,21 @@ This will clone the `ltx-2-mlx` repository at the tested commit.
 uv run ltx-2-mlx generate --prompt "A cat walking in a garden" --output test.mp4 --model dgrauet/ltx-2.3-mlx-q4 --frames 9 --height 480 --width 704
 ```
 
+```bash
+cd ltx-2-mlx && uv run ltx-2-mlx generate \
+       --prompt "A simple colorful abstract pattern" \
+       --output ../data/generated_video/tiny_test.mp4 \
+       --model dgrauet/ltx-2.3-mlx-q4 \
+       --frames 10 \
+       --height 64 \
+       --width 64
+```
+
+```bash
+cd ltx-2-mlx/examples
+uv run python generate_tiny_video.py
+```
+
 ### Animate an image (Image-to-Video)
 
 ```bash
