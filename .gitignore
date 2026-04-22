@@ -10,6 +10,6 @@ wheels/
 .venv
 
 # External tools (clone separately, see setup.sh)
-ltx-2-mlx/
+# ltx-2-mlx/
 
 data/**
