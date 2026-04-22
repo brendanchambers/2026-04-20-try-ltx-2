@@ -1,4 +1,4 @@
-"""Generate a tiny test video using ltx-2-mlx."""
+"""Generate a tiny test video using ltx-2-mlx CLI."""
 
 import subprocess
 import sys
